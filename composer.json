@@ -16,6 +16,7 @@
         "error handler",
         "debug"
     ],
+
     "authors": [
         {
             "name": "Andrei Pisarevskii",
@@ -25,6 +26,7 @@
     ],
     "homepage": "https://github.com/renakdup/whoops-error-handler",
     "require": {
+        "php": ">=7.3.0",
         "filp/whoops": "^2.15"
     },
     "require-dev": {
