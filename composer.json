@@ -1,5 +1,5 @@
 {
-    "name": "renakdup/whoops-wp-error-handler",
+    "name": "renakdup/whoops-wordpress-error-handler",
     "description": "Whoops PHP Error handler for WordPress.",
     "license": "MIT",
     "type": "wordpress-plugin",
