@@ -1,6 +1,6 @@
-# Whoops WordPress Error handler
+# Whoops WordPress error handler
 Whoops PHP error handler for WordPress.   
-It catches Fatal errors and Exceptions and shows in beautiful format.
+It catches fatal _errors_ and _exceptions_ and shows in beautiful format.
 We can see a stack trace and parts of invocable code and we can go through the stack trace to see the called parts in the code.  
 In the debug information we can find GET, POST, Files, Cookie, Session, Server/Request Data, Environment Variables.
 
@@ -14,7 +14,7 @@ In the debug information we can find GET, POST, Files, Cookie, Session, Server/R
 
 2. Download release and unzip `Whoops WP error handler` in `mu-plugins/mu-plugins`.
    ```bash
-   //TODO:: in progress
+
    ```
 
 3. Create the file `mu-plugins/mu-plugins/whoops-error-handler.php` and include general file of plugin

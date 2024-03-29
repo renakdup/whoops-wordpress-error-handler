@@ -759,7 +759,7 @@ pre.sf-dump .sf-dump-str {
 }
 
 .frame.active, .frame:hover, .frame-method-info, .frame-class, .frame-function {
-  color: #A7B6C2;
+  color: #a7b6c2d9;
 }
 
 .prev-exc-title, .prev-exc-title + ul li .prev-exc-code, .frames-description, .frame, .frame:not(:last-child), .frame-file, .frame-file .editor-link, .frame-code .frame-file {
@@ -778,10 +778,6 @@ pre.sf-dump .sf-dump-str {
   color: #8ab4f7a1;
 }
 
-.frame.active, .frame:hover, .frame-method-info, .frame-class, .frame-function {
-  color: #889ca6;
-}
-
 body {
   color: #94a8b2;
 }
@@ -796,4 +792,8 @@ body {
 
 .code-block.frame-args {
   opacity: 1!important;
+}
+
+.linenums li {
+  color: #455860;
 }
