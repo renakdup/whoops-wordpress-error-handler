@@ -12,17 +12,18 @@ In the debug information we can find GET, POST, Files, Cookie, Session, Server/R
     mkdir wp-content/mu-plugins
     ```
 
-2. Download release and unzip `Whoops WP error handler` in `mu-plugins/mu-plugins`.
+2. Go to `mu-plugins/mu-plugins` and download plugin by running the command:
    ```bash
-
+   curl -L https://github.com/renakdup/whoops-wordpress-error-handler/archive/main.zip -o temp.zip &&
+   unzip -q temp.zip -d whoops-error-handler &&
+   rm temp.zip
    ```
 
-3. Create the file `mu-plugins/mu-plugins/whoops-error-handler.php` and include general file of plugin
-```php
-require_once __DIR__ . '/whoops-error-handler/whoops-error-handler.php';
-```
-
-
+3. Create the file `mu-plugins/mu-plugins/whoops-error-handler.php` and include general file of the plugin
+   ```php
+   <?php
+   require_once __DIR__ . '/whoops-error-handler/whoops-error-handler.php';
+   ```
 
 ## Available themes
 To use one of the themes add a const `RD_WHOOPS_THEME` to the `wp-config.php`
