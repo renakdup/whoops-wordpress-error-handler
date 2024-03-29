@@ -33,7 +33,7 @@ const RD_WHOOPS_THEMES = [
 	'default-original', # default whoops theme
 	'gray',
 	'material-dark',
-	'material-dark-contrast',
+	'material-dark-smooth',
 	'original-optimized',
 ];
 
@@ -42,12 +42,13 @@ $whoops->allowQuit( false );
 $handler = new PrettyPageHandler();
 
 $define_theme = function () use ( $handler ) {
+	if ( defined( 'RD_WHOOPS_THEME' ) && RD_WHOOPS_THEME === 'default-original' ) {
+		return;
+	}
 
 	$handler->addResourcePath( __DIR__ . '/whoops/themes/' );
 
-	if ( defined( 'RD_WHOOPS_THEME' ) && RD_WHOOPS_THEME === 'default-original' ) {
-		return;
-	} else if (
+	if (
 		defined( 'RD_WHOOPS_THEME' )
 		&& in_array( RD_WHOOPS_THEME, RD_WHOOPS_THEMES )
 	) {
@@ -55,7 +56,7 @@ $define_theme = function () use ( $handler ) {
 		return;
 	}
 
-	$handler->addCustomCss( 'material-dark-contrast.css' );
+	$handler->addCustomCss( 'material-dark-smooth.css' );
 };
 
 $define_theme();

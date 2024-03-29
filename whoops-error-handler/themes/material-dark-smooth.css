@@ -724,6 +724,11 @@ body header {
   padding: 35px 40px 20px;
 }
 
+header > div:first-child {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 body .search-for-help {
   display: none;
 }
@@ -759,4 +764,36 @@ pre.sf-dump .sf-dump-str {
 
 .prev-exc-title, .prev-exc-title + ul li .prev-exc-code, .frames-description, .frame, .frame:not(:last-child), .frame-file, .frame-file .editor-link, .frame-code .frame-file {
   color: #5f7985;
+}
+
+.data-table td:first-child, .frame-index, .frame-comment-context, .data-table span.empty {
+  color: #b0c5d1ba;
+}
+
+.data-table-container label {
+  color: #8ab4f7a1;
+}
+
+.details-heading, .frame.active, .frame:hover, .frames-tab.frames-tab-active, .frames-tab:hover {
+  color: #8ab4f7a1;
+}
+
+.frame.active, .frame:hover, .frame-method-info, .frame-class, .frame-function {
+  color: #889ca6;
+}
+
+body {
+  color: #94a8b2;
+}
+
+.details pre.sf-dump, .details pre.sf-dump .sf-dump-num, .details pre.sf-dump .sf-dump-const, .details pre.sf-dump .sf-dump-str, .details pre.sf-dump .sf-dump-note, .details pre.sf-dump .sf-dump-ref, .details pre.sf-dump .sf-dump-public, .details pre.sf-dump .sf-dump-protected, .details pre.sf-dump .sf-dump-private, .details pre.sf-dump .sf-dump-meta, .details pre.sf-dump .sf-dump-key, .details pre.sf-dump .sf-dump-index, pre.sf-dump, pre.sf-dump .sf-dump-default {
+  color: #8ca662!important;
+}
+
+.code-block {
+  opacity: 0.92!important;
+}
+
+.code-block.frame-args {
+  opacity: 1!important;
 }

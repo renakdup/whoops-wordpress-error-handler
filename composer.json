@@ -1,0 +1,33 @@
+{
+    "name": "renakdup/whoops-wp-error-handler",
+    "description": "Whoops PHP Error handler for WordPress.",
+    "license": "MIT",
+    "type": "wordpress-plugin",
+    "keywords": [
+        "wordpress",
+        "wordpress plugin",
+        "wordpress debug",
+        "wordpress error handler",
+        "wp",
+        "wp plugin",
+        "whoops",
+        "whoops wordpress",
+        "whoops handler",
+        "error handler",
+        "debug"
+    ],
+    "authors": [
+        {
+            "name": "Andrei Pisarevskii",
+            "email": "renakdup@gmail.com",
+            "homepage": "https://wp-yoda.com/en/"
+        }
+    ],
+    "homepage": "https://github.com/renakdup/whoops-error-handler",
+    "require": {
+        "filp/whoops": "^2.15"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.42"
+    }
+}
