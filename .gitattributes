@@ -1,4 +1,4 @@
 # exclude
-LICENSE
-.gitignore
-README.md
+LICENSE export-ignore
+.gitignore export-ignore
+README.md export-ignore
