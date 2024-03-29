@@ -1,7 +1,7 @@
 # Whoops WordPress error handler
 Whoops PHP error handler for WordPress.   
 It catches fatal _errors_ and _exceptions_ and shows in beautiful format.
-We can see a stack trace and parts of invocable code and we can go through the stack trace to see the called parts in the code.  
+We can see a stack trace, go through the stack trace to see the called parts in the code.  
 In the debug information we can find GET, POST, Files, Cookie, Session, Server/Request Data, Environment Variables.
 
 ![Whoops Error Handler for WordPress](./doc/img/default-original.png)
