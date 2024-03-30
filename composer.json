@@ -2,7 +2,7 @@
     "name": "renakdup/whoops-wordpress-error-handler",
     "description": "Whoops PHP Error handler for WordPress.",
     "license": "MIT",
-    "type": "wordpress-plugin",
+    "type": "library",
     "keywords": [
         "wordpress",
         "wordpress plugin",
