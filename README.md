@@ -30,7 +30,12 @@ In the debug information we can find GET, POST, Files, Cookie, Session, Server/R
 3. Add the calling code to the file
    ```php
    <?php
-   $error_handler = Pisarevskii\WhoopsErrorHandler\WhoopsErrorHandler();
+   // This checks necessary if you use the package as a dev dependency
+   if ( ! class_exists( Pisarevskii\WhoopsErrorHandler\ErrorHandler::class ) ) {
+        return;
+   }
+   
+   $error_handler = new Pisarevskii\WhoopsErrorHandler\ErrorHandler();
    $error_handler->init();
    ```
 
