@@ -12,7 +12,6 @@
  * Author Email: renakdup@gmail.com
  * Author Site: https://wp-yoda.com/en/
  *
- * Version: 1.0
  * Source Code: https://github.com/renakdup/whoops-error-handler
  * Licence: MIT License
  */
@@ -22,7 +21,7 @@ namespace Pisarevskii\WhoopsErrorHandler;
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Run;
 
-class WhoopsErrorHandler {
+class ErrorHandler {
 	// Whoops default original theme
 	public const ORIGINAL_THEME = 'default-original';
 	protected const DEFAULT_PLUGIN_THEME = 'material-dark-smooth';

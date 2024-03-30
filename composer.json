@@ -14,9 +14,9 @@
         "whoops wordpress",
         "whoops handler",
         "error handler",
-        "debug"
+        "debug",
+        "wordpress-library"
     ],
-
     "authors": [
         {
             "name": "Andrei Pisarevskii",
@@ -31,5 +31,10 @@
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.42"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pisarevskii\\WhoopsErrorHandler\\": "./src/"
+        }
     }
 }
