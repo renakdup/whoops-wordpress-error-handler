@@ -1,3 +1,6 @@
+# repo-language detect
+*.css linguist-detectable=false
+
 # exclude
 .gitignore export-ignore
 .gitattributes export-ignore
