@@ -61,7 +61,7 @@ class ErrorHandler {
 	public function init() {
 		$this->prohibited_envs = apply_filters( "pisarevskii/whoops-error-handler/prohibited-envs", [ "production" ] );
 
-		if ( ! in_array( wp_get_environment_type(), $this->prohibited_envs )
+		if ( in_array( wp_get_environment_type(), $this->prohibited_envs )
 		     || apply_filters( "pisarevskii/whoops-error-handler/not-enable", false )
 		) {
 			return;
