@@ -52,7 +52,6 @@ If you want to exclude additional envs, you should use the filter:
 add_filter( 'pisarevskii/whoops-error-handler/prohibited-envs', function ( $defaults ) {
 	return array_merge( $defaults, [ 'staging', 'development' ] );
 }, 10, 1);
-apply_filters( "pisarevskii/whoops-error-handler/prohibited-envs", [ "production" ] );
 ```
 
 ---
