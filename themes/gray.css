@@ -415,3 +415,7 @@ pre.sf-dump, pre.sf-dump .sf-dump-default {
 .data-table label.empty {
   display: block;
 }
+
+.frame-code-container .frame-code > pre {
+  max-height: 430px !important;
+}
