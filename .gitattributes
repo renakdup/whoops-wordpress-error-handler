@@ -1,13 +1,13 @@
 # repo-language detect
 *.css linguist-detectable=false
 
-# exclude
-.gitignore export-ignore
-.gitattributes export-ignore
+# exclude from release
+; .gitignore export-ignore
+; .gitattributes export-ignore
 
-LICENSE export-ignore
-README.md export-ignore
-doc/ export-ignore
-composer.json export-ignore
-composer.lock export-ignore
-Makefile export-ignore
+; LICENSE export-ignore
+; README.md export-ignore
+; doc/ export-ignore
+; composer.json export-ignore
+; composer.lock export-ignore
+; Makefile export-ignore
