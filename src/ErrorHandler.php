@@ -80,7 +80,7 @@ class ErrorHandler {
 				return;
 			}
 
-			$handler->addResourcePath( __DIR__ . '/whoops/themes/' );
+			$handler->addResourcePath( __DIR__ . '/../themes/' );
 			$handler->addCustomCss( $this->theme . '.css' );
 		};
 
