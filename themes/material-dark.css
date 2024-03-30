@@ -677,4 +677,5 @@ body #hide-error {
 
 .frame-code-container .frame-code > pre {
   max-height: 430px !important;
+  overflow: hidden!important;
 }

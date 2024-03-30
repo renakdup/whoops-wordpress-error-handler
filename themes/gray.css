@@ -418,4 +418,6 @@ pre.sf-dump, pre.sf-dump .sf-dump-default {
 
 .frame-code-container .frame-code > pre {
   max-height: 430px !important;
+  overflow: hidden!important;
 }
+
