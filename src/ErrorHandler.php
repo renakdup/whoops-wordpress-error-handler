@@ -16,7 +16,7 @@
  * Licence: MIT License
  */
 
-namespace Pisarevskii\WhoopsErrorHandler;
+namespace Renakdup\WhoopsErrorHandler;
 
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Run;
@@ -59,10 +59,10 @@ class ErrorHandler {
 	}
 
 	public function init() {
-		$this->prohibited_envs = apply_filters( "pisarevskii/whoops-error-handler/prohibited-envs", [ "production" ] );
+		$this->prohibited_envs = apply_filters( "renakdup/whoops-error-handler/prohibited-envs", [ "production" ] );
 
 		if ( in_array( wp_get_environment_type(), $this->prohibited_envs )
-		     || apply_filters( "pisarevskii/whoops-error-handler/not-enable", false )
+		     || apply_filters( "renakdup/whoops-error-handler/not-enable", false )
 		) {
 			return;
 		}

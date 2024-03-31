@@ -31,11 +31,11 @@ In the debug information we can find GET, POST, Files, Cookie, Session, Server/R
    ```php
    <?php
    // This checks necessary if you use the package as a dev dependency
-   if ( ! class_exists( Pisarevskii\WhoopsErrorHandler\ErrorHandler::class ) ) {
+   if ( ! class_exists( Renakdup\WhoopsErrorHandler\ErrorHandler::class ) ) {
         return;
    }
    
-   $error_handler = new Pisarevskii\WhoopsErrorHandler\ErrorHandler();
+   $error_handler = new Renakdup\WhoopsErrorHandler\ErrorHandler();
    $error_handler->init();
    ```
 
@@ -49,7 +49,7 @@ By the default _error handler_ isn't displayed for `wp_get_environment_type() ==
 If you want to exclude additional envs, you should use the filter:
 
 ```php
-add_filter( 'pisarevskii/whoops-error-handler/prohibited-envs', function ( $defaults ) {
+add_filter( 'renakdup/whoops-error-handler/prohibited-envs', function ( $defaults ) {
 	return array_merge( $defaults, [ 'staging', 'development' ] );
 }, 10, 1);
 ```
@@ -58,7 +58,7 @@ add_filter( 'pisarevskii/whoops-error-handler/prohibited-envs', function ( $defa
 If you want to disable _error handler_ for some special conditionals then use this filer:
 
 ```php
-add_filter( 'pisarevskii/whoops-error-handler/not-enable', function ( $default ) {
+add_filter( 'renakdup/whoops-error-handler/not-enable', function ( $default ) {
 	if ( ! WP_DEBUG || ! WP_DEBUG_DISPLAY ) {
 		return true;
 	}
@@ -70,7 +70,7 @@ add_filter( 'pisarevskii/whoops-error-handler/not-enable', function ( $default )
 To use one of the available themes, you can pass theme's name while instantiating object.
 
 ```bash
- $error_handler = Pisarevskii\WhoopsErrorHandler\WhoopsErrorHandler( 'gray' );
+ $error_handler = Renakdup\WhoopsErrorHandler\WhoopsErrorHandler( 'gray' );
 ```
 
 ## Available themes
