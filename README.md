@@ -1,6 +1,6 @@
 # Whoops WordPress error handler
 
-[![Latest Stable Version](http://poser.pugx.org/renakdup/whoops-wordpress-error-handler/v)](https://packagist.org/packages/renakdup/whoops-wordpress-error-handler) [![Total Downloads](http://poser.pugx.org/renakdup/whoops-wordpress-error-handler/downloads)](https://packagist.org/packages/renakdup/whoops-wordpress-error-handler) [![PHP Version Require](http://poser.pugx.org/renakdup/whoops-wordpress-error-handler/require/php)](https://packagist.org/packages/renakdup/whoops-wordpress-error-handler) [![License](http://poser.pugx.org/renakdup/whoops-wordpress-error-handler/license)](https://packagist.org/packages/renakdup/whoops-wordpress-error-handler)
+[![Total Downloads](http://poser.pugx.org/renakdup/whoops-wordpress-error-handler/downloads)](https://packagist.org/packages/renakdup/whoops-wordpress-error-handler) [![PHP Version Require](http://poser.pugx.org/renakdup/whoops-wordpress-error-handler/require/php)](https://packagist.org/packages/renakdup/whoops-wordpress-error-handler) [![Latest Stable Version](http://poser.pugx.org/renakdup/whoops-wordpress-error-handler/v)](https://packagist.org/packages/renakdup/whoops-wordpress-error-handler) [![License](http://poser.pugx.org/renakdup/whoops-wordpress-error-handler/license)](https://packagist.org/packages/renakdup/whoops-wordpress-error-handler)
 
 Whoops PHP error handler for WordPress with different themes.  
 It catches fatal _errors_ and _exceptions_ and shows in beautiful format.
