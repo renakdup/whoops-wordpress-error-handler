@@ -71,7 +71,7 @@ class ErrorHandler {
 			return;
 		}
 
-		$this->disableQueryMonitor();
+		$this->disableQueryMonitorHandler();
 
 		$whoops = new Run();
 		$whoops->allowQuit( false );
@@ -91,7 +91,7 @@ class ErrorHandler {
 		$whoops->register();
 	}
 
-	protected function disableQueryMonitor(): void {
-		defined( 'QM_DISABLED' ) ?: define( 'QM_DISABLED', true );
+	protected function disableQueryMonitorHandler(): void {
+		defined( 'QM_DISABLE_ERROR_HANDLER' ) ?: define( 'QM_DISABLE_ERROR_HANDLER', true );
 	}
 }
