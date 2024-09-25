@@ -71,6 +71,8 @@ class ErrorHandler {
 			return;
 		}
 
+		$this->disableQueryMonitor();
+
 		$whoops = new Run();
 		$whoops->allowQuit( false );
 		$handler = new PrettyPageHandler();
@@ -87,5 +89,9 @@ class ErrorHandler {
 		$setup_theme();
 		$whoops->pushHandler( $handler );
 		$whoops->register();
+	}
+
+	protected function disableQueryMonitor(): void {
+		defined( 'QM_DISABLED' ) ?: define( 'QM_DISABLED', true );
 	}
 }
